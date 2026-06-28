@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Walls &amp; Wallets</title>
+<meta name="description" content="Review your cart and place your order for Walls & Wallets metro card skins.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Walls <span>&amp;</span> Wallets</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-right">
+      <a href="checkout.html" class="cart-btn" aria-label="Cart">
+        🛒 Cart <span class="cart-badge">0</span>
+      </a>
+      <button class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <span class="eyebrow">Your Cart</span>
+    <h1>Checkout</h1>
+  </div>
+</section>
+
+<section class="wrap checkout-grid">
+  <div>
+    <div class="cart-list" id="cartList"></div>
+    <div class="empty-cart" id="emptyCart" style="display:none;">
+      <h2>Your cart is empty</h2>
+      <p>Looks like you haven't picked a skin yet.</p>
+      <a href="index.html#productGrid" class="btn solid">Browse skins</a>
+    </div>
+  </div>
+
+  <div class="summary">
+    <h3>Order summary</h3>
+    <div class="summary-row"><span>Items</span><span id="itemCountVal">0</span></div>
+    <div class="summary-row"><span>Subtotal</span><span id="subtotalVal">₹0</span></div>
+    <div class="summary-row total"><span>Total</span><span class="val" id="totalVal">₹0</span></div>
+
+    <form id="checkoutForm">
+      <div class="field">
+        <label for="coName">Full name</label>
+        <input id="coName" type="text" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="coPhone">WhatsApp number</label>
+        <input id="coPhone" type="tel" placeholder="10-digit mobile number" required>
+      </div>
+      <div class="field">
+        <label for="coEmail">Email</label>
+        <input id="coEmail" type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="coAddress">Delivery address</label>
+        <input id="coAddress" type="text" placeholder="House no, street, area, city, pincode" required>
+      </div>
+      <button type="submit" class="btn solid" id="placeOrderBtn">Place order via WhatsApp</button>
+    </form>
+    <p class="note">Tapping "Place order" opens WhatsApp with your order pre-filled. Hit send and we'll confirm payment &amp; delivery with you there.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Walls <span>&amp;</span> Wallets</a>
+      <p>Metro card skins for Delhi commuters who'd rather stand out than blend in. Started by three friends, run on WhatsApp.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="checkout.html">Cart &amp; Checkout</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="tel:+919315207344">+91 93152 07344</a>
+      <a href="mailto:help@wallsandwallets.in">help@wallsandwallets.in</a>
+      <a href="https://wa.me/919315207344" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      <a href="cancellation-refund.html">Cancellation &amp; Refund</a>
+      <a href="shipping-delivery.html">Shipping &amp; Delivery</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Walls &amp; Wallets. Made for the Delhi Metro.</span>
+    <span>Fan-art skins, not officially licensed.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
