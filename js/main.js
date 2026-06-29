@@ -6,13 +6,13 @@ const WHATSAPP_NUMBER = "919315207344"; // no '+' for wa.me links
 const STORE_EMAIL = "help@wallsandwallets.in";
 
 const PRODUCTS = [
-  { id:"spiderman-pass",  name:"Daily Bugle",     tag:"Movie",     price:89, img:"images/spiderman-pass.jpg",  blurb:"Press credentials for your daily swipe-in. No photos required.", landscape:true },
-  { id:"durden-id",       name:"Durden ID",       tag:"Movie",     price:89, img:"images/durden-id.jpg",       blurb:"Service number included. Sanity not guaranteed.", landscape:true },
-  { id:"hannah-montana",  name:"Best of Both Worlds", tag:"Throwback", price:89, img:"images/hannah-montana.jpg", blurb:"Rockstar by night, metro commuter by day.", landscape:true },
-  { id:"travel-pass",     name:"Wanderlust",      tag:"Aesthetic", price:89, img:"images/travel-pass.jpg",     blurb:"Makes even a metro ride feel like a journey somewhere better.", landscape:true },
-  { id:"hello-kitty",     name:"Hello Kitty Cash", tag:"Cute",     price:89, img:"images/hello-kitty.jpg",     blurb:"Turns every tap-in into a treat.", landscape:true },
-  { id:"amex-black",      name:"Black Card",      tag:"Aesthetic", price:89, img:"images/amex-black.jpg",      blurb:"Centurion looks, metro card budget.", landscape:true },
-  { id:"uno-reverse",     name:"Reverse Card",    tag:"Gaming",    price:89, img:"images/uno-reverse.jpg",     blurb:"Skip your turn, never skip your train.", landscape:true }
+  { id:"venom-bite",      name:"Venom Bite",      tag:"Movie",     price:89, img:"images/venom-bite.jpg",      blurb:"Tap in, tap out, say nothing about the tongue.", landscape:true },
+  { id:"spider-verse",    name:"Spider-Verse",    tag:"Movie",     price:89, img:"images/spider-verse.jpg",    blurb:"With great power comes great metro etiquette.", landscape:true },
+  { id:"aesthetic-diary", name:"Aesthetic Diary", tag:"Aesthetic", price:89, img:"images/aesthetic-diary.jpg", blurb:"Soft scrapbook energy for your daily commute.", landscape:true },
+  { id:"kuromi-street",   name:"Kuromi Street",   tag:"Cute",      price:89, img:"images/kuromi-street.jpg",   blurb:"Cute with an attitude problem, just like rush hour.", landscape:true },
+  { id:"kiss-marks",      name:"Kiss Marks",      tag:"Aesthetic", price:89, img:"images/kiss-marks.jpg",      blurb:"Lipstick on every tap, no questions asked.", landscape:true },
+  { id:"wolf-cash",       name:"Wolf Cash",       tag:"Movie",     price:89, img:"images/wolf-cash.jpg",       blurb:"Sell the pitch, swipe the card, repeat.", landscape:true },
+  { id:"call-saul",       name:"Call Saul",       tag:"TV",        price:89, img:"images/call-saul.jpg",       blurb:"In legal trouble on the yellow line? Better swipe this.", landscape:true }
 ];
 
 function findProduct(id){ return PRODUCTS.find(p => p.id === id); }
